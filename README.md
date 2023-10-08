@@ -1,3 +1,8 @@
+
+![papas-orchard-low-resolution-logo-color-on-transparent-background](https://github.com/eshinhw/papas-orchard/assets/41933169/b811ed1b-c007-4319-9d56-3669c76c40d4)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
