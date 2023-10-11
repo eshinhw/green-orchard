@@ -1,21 +1,20 @@
 import Link from "next/link";
 import React from "react";
 
-type Prop = {
-  id: string;
-  price: number;
-  name: string;
-  productImage: string;
-};
-
-export default function ProductGrid({ id, price, name, productImage }: Prop) {
+export default function ProductGrid(props: any) {
+  const { product } = props;
+  const { unit_amount: cost, product: productInfo } = product;
+  const { id: productId, name: name } = productInfo;
   return (
-    <Link href={`/product/${name.toLowerCase()}`}>
+    <Link href={`/product/${productId}`}>
       <div className="flex flex-col shadow bg-white hover:shadow-xl cursor-pointer">
-        <img className="w-full h-full object-cover" src={productImage}></img>
+        <img
+          className="w-full h-full object-cover"
+          src={productInfo.images[0]}
+        ></img>
         <div className="flex flex-row items-center justify-between p-4 gap-4">
           <h3>{name}</h3>
-          <p>$ {price / 100}</p>
+          <p>$ {cost / 100}</p>
         </div>
       </div>
     </Link>
