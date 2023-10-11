@@ -28,7 +28,7 @@ export default function QuantityMenu(props: Props) {
 
   return (
     <>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 mt-10">
         <div className="flex flex-row justify-between gap-10">
           <div className="flex flex-row gap-5 items-center">
             <button
