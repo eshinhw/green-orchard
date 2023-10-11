@@ -13,17 +13,18 @@
   
 </div>
 
-# Purpose & Motivation
+## Purpose & Motivation
 
-# Tech Stack & APIs
+## Tech Stack & APIs
 
 - Next.js
 - TypeScript
 - Tailwind CSS
-- [Fruityvice: Fruit Data API](https://www.fruityvice.com)
+- [Zustand](https://github.com/pmndrs/zustand)
 - [Stripe API](https://stripe.com/docs/api)
+- [Fruityvice: Fruit Data API](https://www.fruityvice.com)
 
-# How to Start Development Mode
+## How to Start Development Mode
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
