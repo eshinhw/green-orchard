@@ -12,7 +12,7 @@ async function getFruityViceData(fruitName: string) {
   return res.json();
 }
 
-export default async function ProductPage({
+export default async function IndividualProductPage({
   params,
 }: {
   params: {
