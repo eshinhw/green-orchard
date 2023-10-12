@@ -18,7 +18,7 @@ export default function ProductGrid(props: any) {
     setProduct({ newProduct });
   };
   return (
-    <Link href={`/product/${productId}`} onClick={onProductClick}>
+    <Link href={`/products/${productId}`} onClick={onProductClick}>
       <div className="flex flex-col shadow bg-white hover:shadow-xl cursor-pointer">
         <img
           className="w-full h-full object-cover"
