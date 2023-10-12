@@ -10,7 +10,12 @@ export default function Header() {
           Papas Orchard
         </h1>
       </Link>
-      <BsCartFill className="cursor-pointer hover:text-lime-800" />
+      <div className="flex flex-row gap-10 items-center">
+        <Link href={"/products"}>
+          <h5 className="text-xl">Products</h5>
+        </Link>
+        <BsCartFill className="cursor-pointer hover:text-lime-800" />
+      </div>
     </header>
   );
 }
