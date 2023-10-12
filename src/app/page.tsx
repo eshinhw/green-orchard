@@ -1,15 +1,14 @@
-import ProductGrid from "@/components/product-grid";
-import { getStripeProducts } from "./service/stripe";
+import React from "react";
 
-export default async function HomePage() {
-  const products = await getStripeProducts();
+export default function HomePage() {
   return (
-    <main className="p-4 flex flex-col">
-      <div className="max-w-[1100px] w-full mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {products.map((product, idx) => (
-          <ProductGrid product={product} key={idx} />
-        ))}
-      </div>
-    </main>
+    <div>
+      <h1 className="text-2xl text-center my-10">Welcome to Papas Orchard!</h1>
+      <h1 className="text-xl text-center my-10">ALWAYS FRESH!</h1>
+
+      <h1 className="text-xl text-center my-10">#VISITPAPASORCHARD</h1>
+
+      <h1 className="text-xl text-center my-10">FAQ</h1>
+    </div>
   );
 }
