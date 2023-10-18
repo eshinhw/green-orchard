@@ -47,9 +47,8 @@ export default function QuantityMenu(props: Props) {
           </div>
           <div className="py-1 text-xl">$ {calcPrice(quantity)}</div>
         </div>
-        <div className="flex flex-row justify-between gap-10">
+        <div className="flex flex-row justify-end gap-10">
           <button className="bg-black text-white px-4 py-1">Add to Cart</button>
-          <button className="bg-black text-white px-4 py-1">Buy Now</button>
         </div>
       </div>
     </>
