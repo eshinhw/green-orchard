@@ -1,13 +1,21 @@
 "use client";
+import useCart from "@/app/store";
 import React, { useState } from "react";
 
 type Props = {
   price: number;
+  currProduct: any;
+  productInfo: any;
 };
 
 export default function QuantityMenu(props: Props) {
   const [quantity, setQuantity] = useState(1);
   const [price, setPrice] = useState(props.price);
+  const { unit_amount: cost, product: productInfo } = props.currProduct;
+  const { name: name, id: id } = productInfo;
+  console.log(props.productInfo);
+  const addItem = useCart((state: any) => state.addItem);
+
   const increase = () => {
     if (quantity >= 1) {
       setQuantity(quantity + 1);
@@ -24,6 +32,18 @@ export default function QuantityMenu(props: Props) {
 
   const calcPrice = (quantity: number) => {
     return quantity * props.price;
+  };
+
+  const addToCart = () => {
+    const newItem = {
+      id,
+      name,
+      quantity,
+      cost: cost / 100,
+      img: props.productInfo.images[0],
+    };
+    addItem({ newItem });
+    console.log("Item added to cart!");
   };
 
   return (
@@ -47,8 +67,10 @@ export default function QuantityMenu(props: Props) {
           </div>
           <div className="py-1 text-xl">$ {calcPrice(quantity)}</div>
         </div>
-        <div className="flex flex-row justify-end gap-10">
-          <button className="bg-black text-white px-4 py-1">Add to Cart</button>
+        <div className="flex flex-row justify-end mt-4">
+          <button className="bg-black text-white px-4 py-1" onClick={addToCart}>
+            Add to Cart
+          </button>
         </div>
       </div>
     </>

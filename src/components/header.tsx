@@ -14,7 +14,9 @@ export default function Header() {
         <Link href={"/products"}>
           <h5 className="text-xl">Products</h5>
         </Link>
-        <BsCartFill className="cursor-pointer hover:text-lime-800" />
+        <Link href={"/cart"}>
+          <BsCartFill className="cursor-pointer hover:text-lime-800" />
+        </Link>
       </div>
     </header>
   );

@@ -1,4 +1,5 @@
 import { getStripeProductById } from "@/app/service/stripe";
+import useCart from "@/app/store";
 import QuantityMenu from "@/components/quantity-menu";
 import React from "react";
 
@@ -21,8 +22,8 @@ export default async function IndividualProductPage({
 }) {
   const currProduct = await getStripeProductById(params.productId);
   const { unit_amount: cost, product: productInfo } = currProduct;
-  const { name: name } = productInfo;
-  const fruitData = await getFruityViceData(name);
+
+  const fruitData = await getFruityViceData((productInfo as any).name);
   return (
     <div className="max-w-[1100px] w-full mx-auto p-4">
       <div className="flex flex-row">
@@ -35,7 +36,7 @@ export default async function IndividualProductPage({
           />
         </div>
         <div className="w-1/2">
-          <h3 className="text-3xl my-5">{name}</h3>
+          <h3 className="text-3xl my-5">{(productInfo as any).name}</h3>
           <div className="flex flex-row gap-4">
             <div className="w-1/2">
               <p>Description</p>
@@ -60,7 +61,11 @@ export default async function IndividualProductPage({
               <p>Protein: {fruitData.nutritions.protein} g</p>
             </div>
           </div>
-          <QuantityMenu price={cost! / 100} />
+          <QuantityMenu
+            price={cost! / 100}
+            currProduct={currProduct}
+            productInfo={productInfo}
+          />
         </div>
       </div>
     </div>
