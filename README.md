@@ -17,7 +17,7 @@
 
 Build a full stack e-commerce website which sells local fruits.
 
-## Tech Stack & APIs
+## Tech Stack
 
 - React
 - Next.js
