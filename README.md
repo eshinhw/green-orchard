@@ -15,7 +15,9 @@
 
 ## Objectives
 
-Build a full stack e-commerce website which sells local fruits.
+- Build a full stack e-commerce website which sells local fruits produced at Papas Orchard.
+- Implement UI and client interaction with Tailwind CSS and React.
+- Implement user authentication and DB integration for backend.
 
 ## Tech Stack
 
