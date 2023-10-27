@@ -1,6 +1,6 @@
 <div align="center">
 
-![logo](https://github.com/eshinhw/papas-orchard/assets/41933169/b811ed1b-c007-4319-9d56-3669c76c40d4)
+![logo](https://github.com/eshinhw/green-orchard/assets/41933169/c6a8f647-2175-456d-a7e1-e6db298cf82e)
 
 </div>
 
