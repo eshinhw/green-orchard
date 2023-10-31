@@ -5,8 +5,8 @@ import { Podkova } from "next/font/google";
 import Footer from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Papas Orchard",
-  description: "Old Fashioned Local Orchard Run by Papas",
+  title: "Green Orchard",
+  description: "Always Fresh Fruits from Green Orchard",
 };
 
 const podkova = Podkova({ subsets: ["latin"], display: "swap" });
