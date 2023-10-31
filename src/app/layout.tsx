@@ -1,15 +1,18 @@
 import Header from "@/components/header";
 import "./globals.css";
 import type { Metadata } from "next";
-import { Podkova } from "next/font/google";
 import Footer from "@/components/footer";
+import { Grandstander } from "next/font/google";
+
+const grandstander = Grandstander({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Green Orchard",
   description: "Always Fresh Fruits from Green Orchard",
 };
-
-const podkova = Podkova({ subsets: ["latin"], display: "swap" });
 
 export default function RootLayout({
   children,
@@ -19,7 +22,9 @@ export default function RootLayout({
   return (
     <html>
       <body
-        className={"min-h-screen flex flex-col relative " + podkova.className}
+        className={
+          "min-h-screen flex flex-col relative " + grandstander.className
+        }
       >
         <Header />
         <div className="flex-1">{children}</div>
