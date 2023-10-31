@@ -7,7 +7,7 @@ export default function ProductGrid(props: any) {
   const { product } = props;
   const { unit_amount: cost, product: productInfo } = product;
   const { id: productId, name: name } = productInfo;
-  const setProduct = useCart((state) => state.setProduct);
+  const setProduct = useCart((state) => (state as any).setProduct);
   const onProductClick = () => {
     const newProduct = {
       name,
