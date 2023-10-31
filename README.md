@@ -37,9 +37,8 @@
 ## Demo Screenshot
 
 <div align="center">
-  <img src="https://github.com/eshinhw/papas-orchard/assets/41933169/5494ffa0-e5af-4cf1-99fc-b7ff2f4447cb"/>
+  <img src="https://github.com/eshinhw/green-orchard/assets/41933169/2e1b4b95-fa80-4f86-b2c9-126204ff2e43"/>
 </div>
-
 
 ## Development Mode
 
