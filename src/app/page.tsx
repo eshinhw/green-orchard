@@ -127,8 +127,8 @@ export default function HomePage() {
             <p>
               Thank you for such wonderful fruit, I feel like I have a surprise
               coming every Wednesday and I really look forward to it. It is a
-              bright spot mid week. Looking forward to this Wednesday's cart!
-              Thank you!
+              bright spot mid week. Looking forward to this Wednesday cart Thank
+              you.
             </p>
             <p>James Garfield</p>
           </div>
@@ -144,8 +144,8 @@ export default function HomePage() {
             <p>
               Thank you for such wonderful fruit, I feel like I have a surprise
               coming every Wednesday and I really look forward to it. It is a
-              bright spot mid week. Looking forward to this Wednesday's cart!
-              Thank you!
+              bright spot mid week. Looking forward to this Wednesday cart Thank
+              you.
             </p>
             <p>James Garfield</p>
           </div>
@@ -161,8 +161,8 @@ export default function HomePage() {
             <p>
               Thank you for such wonderful fruit, I feel like I have a surprise
               coming every Wednesday and I really look forward to it. It is a
-              bright spot mid week. Looking forward to this Wednesday's cart!
-              Thank you!
+              bright spot mid week. Looking forward to this Wednesdays cart
+              Thank you.
             </p>
             <p>James Garfield</p>
           </div>
