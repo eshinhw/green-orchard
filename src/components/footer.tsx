@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="p-5 border-t-2 border-solid flex items-center justify-between px-5">
       <p className="text-stone-400">
-        © {new Date().getFullYear()} Papas Orchard. All right reserved.
+        © {new Date().getFullYear()} Green Orchard. All right reserved.
       </p>
       <div className="flex flex-row justfy-between gap-8">
         <Link href={"https://facebook.com"} target="_blank">
